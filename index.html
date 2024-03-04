@@ -84,8 +84,7 @@
         Mamah. Kami sayang Mamah sepanjang waktu! ❤️
       </p>
       <p><i class="love-heart">&hearts;</i></p>
-      <button class="play-btn" onclick="toggleAudio()">Mulai Musik</button>
-      <audio id="background-music" loop>
+      <audio id="background-music" autoplay loop>
         <source src="music/ibu.mp3" type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
@@ -95,15 +94,6 @@
       document.addEventListener("DOMContentLoaded", function () {
         document.querySelector(".container").style.opacity = 1;
       });
-
-      function toggleAudio() {
-        var audio = document.getElementById("background-music");
-        if (audio.paused) {
-          audio.play();
-        } else {
-          audio.pause();
-        }
-      }
     </script>
   </body>
 </html>
