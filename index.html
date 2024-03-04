@@ -70,6 +70,21 @@
         cursor: pointer;
         border-radius: 5px;
       }
+
+      .gallery-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
+
+      .gallery-img {
+        width: 150px; /* ukuran yang diinginkan */
+        height: 150px; /* ukuran yang diinginkan */
+        object-fit: cover;
+        margin: 5px;
+        border-radius: 5px;
+      }
     </style>
   </head>
   <body>
@@ -84,10 +99,12 @@
         Mamah. Kami sayang Mamah sepanjang waktu! ❤️
       </p>
       <p><i class="love-heart">&hearts;</i></p>
-      <audio id="background-music" autoplay loop>
-        <source src="music/ibu.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
+      <div class="gallery-container">
+        <img class="gallery-img" src="img/foto1.jpg" alt="Foto 1" />
+        <img class="gallery-img" src="img/foto2.jpg" alt="Foto 2" />
+        <img class="gallery-img" src="img/foto3.jpg" alt="Foto 3" />
+        <img class="gallery-img" src="img/mamah.jpg" alt="Foto 4" />
+      </div>
     </div>
 
     <script>
