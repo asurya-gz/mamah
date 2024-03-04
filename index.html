@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ucapan Selamat Ulang Tahun untuk Mamah</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f1f1f1;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 50px auto;
+        text-align: center;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        animation: fadeIn 1s ease-in-out forwards;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      h1 {
+        color: #333;
+      }
+
+      p {
+        color: #666;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .love-heart {
+        color: red;
+        font-size: 48px;
+      }
+
+      .profile-pic {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin: 0 auto 20px;
+        display: block;
+      }
+
+      .play-btn {
+        background-color: #4caf50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img class="profile-pic" src="img/mamah.jpg" alt="Foto Mamah" />
+      <h1>Selamat Ulang Tahun, Mamah!</h1>
+      <p>
+        Semoga hari ulang tahunmu penuh dengan cinta, kebahagiaan, dan berkah.
+        Mamah adalah sosok yang luar biasa dan sangat berarti bagi kita. Terima
+        kasih atas segala kasih sayang, dukungan, dan kebaikan yang Mamah
+        berikan. Semoga tahun ini membawa banyak kebahagiaan dan kesuksesan bagi
+        Mamah. Kami sayang Mamah sepanjang waktu! ❤️
+      </p>
+      <p><i class="love-heart">&hearts;</i></p>
+      <button class="play-btn" onclick="toggleAudio()">Mulai Musik</button>
+      <audio id="background-music" loop>
+        <source src="music/ibu.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector(".container").style.opacity = 1;
+      });
+
+      function toggleAudio() {
+        var audio = document.getElementById("background-music");
+        if (audio.paused) {
+          audio.play();
+        } else {
+          audio.pause();
+        }
+      }
+    </script>
+  </body>
+</html>
